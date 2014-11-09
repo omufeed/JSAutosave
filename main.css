@@ -1,0 +1,26 @@
+/*Input*/
+.InputContainer{padding:5px;position:relative;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;border:1px solid #A7D8ED;background-color:#f7f7f7;}
+.InputContainer:hover{background-color:#fff;border:1px solid #999999;}
+.InputContainer menu{}
+.InputContainer menu a, .InputContainer menu button{margin-right:5px;}
+.InputContainer hr{margin:5px 0px;}
+.InputContainer .InputState{bottom:5px;right:5px;position:absolute;}
+.InputContainer .InputState .InputState_Saving{display:none;color:#999999;}
+.InputContainer .InputState .InputState_Saved{display:none;color:#999999;}
+.InputContainer .InputState .InputState_Error{display:none;color:red;}
+.InputContainer .InputState .InputState_Save{}
+.InputContainer .InputBody{width:100%;padding:0px;border:0px;}
+.InputContainer textarea, .InputContainer input[type=text]{max-width:100%;background-color:#f7f7f7;color:#666666;}
+.InputContainer textarea:focus, .InputContainer input:focus{outline:none;}
+.InputContainer:hover textarea, .InputContainer:hover input{background-color:#fff;}
+/*Input*/
+
+/*Demo styles*/
+body{margin:auto;width:90%;padding:1%;}
+section{float:left;width:45%;padding:1% 1% 0% 0%;}
+*{margin:0px;padding:0px;}
+header{}
+footer{clear:both;padding-top:2em;}
+
+#IsActive{color:green;}
+/*Demo styles*/

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Omid Mufeed - Simple Autosave Demo</title>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="jquery.timer.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	
+</head>
+<body>
+
+	<header>
+	<h1>Omid Mufeed - Simple Autosave Demo</h1>
+	</header>
+	
+	<section>
+	<h2>Title</h2>
+	<div id="Title" class="InputContainer">
+		<input type ="hidden" id="SaveFunction" name="SaveFunction" value="SaveTitle()" />
+		<input type="text" class="InputBody" id="TitleInputBody" name="TitleInputBody" placeholder="Some text for the title" value="" />
+		<div class="InputState">
+			<span class="InputState_Saved" title="Everything is saved. All the changes you make are automatically saved.">saved</span>
+			<span class="InputState_Saving" title="Saving your changes...">saving</span>
+			<span class="InputState_Error" title="Saving your changes...">not saved</span>
+		</div>
+	</div>
+	
+	<h2>Body</h2>
+	<div id="Body" class="InputContainer">
+		<input type ="hidden" id="SaveFunction" name="SaveFunction" value="SaveBody()" />
+		<textarea class="InputBody" id="BodyInputBody" name="BodyInputBody" cols="50" rows="10" placeholder="Some text for the body"></textarea>
+		<hr />
+		<menu label="Autosave">
+			<span class="InputState_Save"><button type="button" onclick="Save($('#Body'));">Save</button></span>
+			<a href="javascript:void(0)" onclick="alert('Checked spelling!')">Check Spelling</a>
+			<a href="javascript:void(0)" onclick="alert('Show textile help!')">Textile Help</a>
+			<span class="WordCount"></span> words
+			<div class="InputState">
+				<span class="InputState_Saved" title="Everything is saved. All the changes you make are automatically saved.">saved</span>
+				<span class="InputState_Saving" title="Saving your changes...">saving</span>
+				<span class="InputState_Error" title="Saving your changes...">not saved</span>
+			</div>
+		</menu>
+	</div>
+	</section>
+	
+	<section>
+	<strong>Active:</strong> <span id="IsActive" ></span><br />
+	<strong>Save Log</strong>
+	<hr />
+	<span id="AutosaveLog" ></span><br />
+	<br />
+	</section>
+	
+	<footer>
+	Simple Autosave by <a href="http://omidmufeed.com" target="_blank" >Omid Mufeed</a></footer>
+	</footer>
+	
+</body>
+</html>
